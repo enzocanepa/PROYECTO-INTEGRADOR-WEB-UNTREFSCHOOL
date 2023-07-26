@@ -4,52 +4,13 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Nunito', sans-serif;
     list-style: none;
 }
 body{
     background-color: #EFF5F5;
 }
 
-.header{
-    background-color: #00425A;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    height: 85px;
-    padding: 5px 3%;
-}
-.header .logo{
-    cursor: pointer;
-    margin-right: auto;
-}
 
-.header .logo img{
-    height: 70px;
-    width: auto;
-    transition: all 0.3s;
-}
-
-.header .logo img:hover{
-    transform: scale(1.2);
-}
-
-.header .nav-links li{
-    display: inline-block;
-    padding: 0px 20px;
-    font-size: 20px;
-    transition: all 0.3s;
-}
-
-.header .nav-links li a{
-    text-decoration: none;
-    color: aliceblue;
-}
-
-.header .nav-links li a:hover{
-    color: #00c3ff;
-    transform: scale(1.2);
-}
 .container{
     max-width: 1200px;
     margin: 0 auto;
@@ -105,4 +66,68 @@ body{
     border-radius: 50%;
     color: white;
     transition: all .5s ease;
+}
+.social-redes a img{
+    width: 20px;
+    height: 20px;
+}
+
+/* contacto pages */
+
+.mainContacto{
+    padding: 1% 0 10% 0;
+}
+
+.mainContacto h2 {
+    color: #494B4D;
+    font-size: 2.5em;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 15px Opx; 
+    padding: 50px 0;
+}
+
+
+body .mainContacto {
+    margin: auto; }
+    body .mainContacto form {
+    background-color: #f8f5ee;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    border-radius: 10px;
+    font-size: 1.0em;
+    margin: 0 auto;
+    padding: 20px; 
+}
+.mainContacto form .field {
+    border: 1px solid #ccc;
+    padding: 10px; 
+}
+.mainContacto form .field:focus {
+    border-color: #4ea5f1; 
+}
+
+.mainContacto form .center-content {
+    text-align: center; 
+}
+.mainContacto form .center-content .btn {
+    border-radius: 5px;
+    display: inline-block;
+    padding: 10px 15px;
+    text-decoration: none;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3); 
+}
+.mainContacto form .center-content .btn-green {
+    color: white;
+    background-color: #3CC93F; 
+}
+.mainContacto form .center-content .btn-green:hover {
+    background-color: #37B839; 
+}
+.mainContacto form .center-content .btn-green:active {
+    background-color: #29962A; 
 }
