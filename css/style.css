@@ -10,6 +10,8 @@ body{
     background-color: #EFF5F5;
 }
 
+/* banner */
+
 .mainPrincipal .divBanner{
     overflow: hidden;
     position: relative;
@@ -18,6 +20,8 @@ body{
     width: 100%;
     height: 50em;
 }
+
+/* quienes somos */
 .mainPrincipal .section-nosotros{
     width: 100%;
 }
@@ -37,6 +41,45 @@ body{
     width: 30%;
 }
 
+/* porque elegirnos */
+
+.mainPrincipal .section-porque{
+    width: 100%;
+}
+
+.mainPrincipal .section-porque .div-porque{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.mainPrincipal .section-porque .div-porque img{
+    width: 30%;
+    
+}
+.mainPrincipal .section-porque .div-porque p{
+    width: 30%;
+}
+
+/* propuesta educativa */
+
+
+/* noticias */
+
+.mainPrincipal .section-noticias{
+    width: 100%;
+}
+
+.mainPrincipal .section-noticias .div-noticias{
+    display: flex;
+    justify-content: space-evenly;
+}
+.mainPrincipal .section-noticias .div-noticias div{
+    width: 30%;
+}
+
+/* footer */
 .container{
     max-width: 1200px;
     margin: 0 auto;
