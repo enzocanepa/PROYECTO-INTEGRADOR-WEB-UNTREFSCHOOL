@@ -44,18 +44,18 @@
     <main class="mainContacto">
         <h2>Formulario</h2>
         <div>
-            <form>
+            <form action="https://formsubmit.co/enzocanepa02@gmail.com " method="POST">
                 <p>Nombre:</p>
-                <input type="text" class="field"> <br>
+                <input type="text" name="nombre" class="field"> <br>
 
                 <p>Email:</p>
-                <input type="email" class="field"> <br>
+                <input type="email" name="email" class="field" required> <br>
 
                 <p>Asunto:</p>
-                <input type="text" class="field"> <br>
+                <input type="text" name="asunto" class="field"> <br>
 
                 <p>Pais:</p>
-                <select name="" id="">
+                <select name="pais">
                     <option value="argentina">argentina</option>
                     <option value="chile">chile</option>
                     <option value="peru">peru</option>
@@ -63,7 +63,7 @@
                     <option value="uruguay">uruguay</option>
                 </select> <br>
                 <p>Mensaje:</p>
-                <textarea class="field"></textarea>
+                <textarea name="mensaje" class="field"></textarea>
                 <br>
                 <p class="center-content">
                     <input type="submit" class="btn btn-green" value="Enviar">
