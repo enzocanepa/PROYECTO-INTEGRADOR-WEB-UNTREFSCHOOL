@@ -1,65 +1,140 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,800;1,400&display=swap');
+/* google font 
+font-family: 'Belanosima', sans-serif;
+font-family: 'Poppins', sans-serif;*/
 
-*{
+@import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@600&family=Poppins:wght@100;200;400&display=swap');
+
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     list-style: none;
 }
-body{
+
+body {
     background-color: #EFF5F5;
 }
 
 /* banner */
 
-.mainPrincipal .divBanner{
+.mainPrincipal .divBanner {
     overflow: hidden;
     position: relative;
+    max-width: 100%;
 }
-.mainPrincipal .divBanner img{
+
+.mainPrincipal .divBanner img {
     width: 100%;
     height: 50em;
 }
 
+.titulo-banner {
+    position: absolute;
+    top: 40%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    /* Centrar*/
+    color: white;
+    font-size: 8vw;
+    text-align: center;
+    font-family: 'Belanosima', sans-serif;
+}
+
+@media (max-width:600px){
+    .mainPrincipal .divBanner img{
+        height: 50%;
+    }
+}
+@media (max-width: 400px) {
+    .titulo-banner {
+        font-size: 11vw;
+    }
+
+}
+
+
+section {
+    margin: 5% 0;
+}
+
+
+.mainPrincipal section .div-h2 {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 5% 0;
+}
+
 /* quienes somos */
-.mainPrincipal .section-nosotros{
+.mainPrincipal .section-nosotros {
     width: 100%;
 }
 
-.mainPrincipal .section-nosotros .div-nosotros{
+.mainPrincipal .section-nosotros .div-nosotros {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-around;
 }
 
-.mainPrincipal .section-nosotros .div-nosotros img{
-    width: 30%;
+.mainPrincipal .section-nosotros .div-nosotros img {
+    width: 40%;
+
+}
+
+.mainPrincipal .section-nosotros .div-nosotros p {
+    width: 40%;
+}
+
+@media (max-width:650px){
+    .mainPrincipal .section-nosotros .div-nosotros{
+        flex-direction: column;
+    }
+    .mainPrincipal .section-nosotros .div-nosotros img {
+        width: 70%;
     
+    }
+    
+    .mainPrincipal .section-nosotros .div-nosotros p {
+        width: 70%;
+    }
 }
-.mainPrincipal .section-nosotros .div-nosotros p{
-    width: 30%;
-}
+
 
 /* porque elegirnos */
 
-.mainPrincipal .section-porque{
+.mainPrincipal .section-porque {
     width: 100%;
 }
 
-.mainPrincipal .section-porque .div-porque{
+.mainPrincipal .section-porque .div-porque {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-around;
 }
 
-.mainPrincipal .section-porque .div-porque img{
-    width: 30%;
-    
+.mainPrincipal .section-porque .div-porque img {
+    width: 40%;
+
 }
-.mainPrincipal .section-porque .div-porque p{
-    width: 30%;
+
+.mainPrincipal .section-porque .div-porque p {
+    width: 40%;
+}
+@media (max-width:650px){
+    .mainPrincipal .section-porque .div-porque{
+        flex-direction: column;
+    }
+    .mainPrincipal .section-porque .div-porque img {
+        width: 70%;
+    
+    }
+    
+    .mainPrincipal .section-porque .div-porque p {
+        width: 70%;
+    }
 }
 
 /* propuesta educativa */
@@ -67,41 +142,52 @@ body{
 
 /* noticias */
 
-.mainPrincipal .section-noticias{
+.mainPrincipal .section-noticias {
     width: 100%;
+    margin-bottom: 15%;
 }
 
-.mainPrincipal .section-noticias .div-noticias{
+.mainPrincipal .section-noticias .div-noticias {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
-.mainPrincipal .section-noticias .div-noticias div{
+
+.mainPrincipal .section-noticias .div-noticias div {
     width: 30%;
+}
+@media (max-width:600px){
+    .mainPrincipal .section-noticias .div-noticias{
+        flex-direction: column;
+        align-items: center;
+    }
+    .mainPrincipal .section-noticias .div-noticias div{
+        width: 70%;
+    }
 }
 
 /* footer */
-.container{
+.container {
     max-width: 1200px;
     margin: 0 auto;
 }
 
-.footer{
+.footer {
     background-color: #24262b;
     padding: 80px 0;
 }
 
-.footer-row{
+.footer-row {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.footer-links{
+.footer-links {
     width: 25%;
     padding: 0 15px;
 }
 
-.footer-links h4{
+.footer-links h4 {
     font-size: 20px;
     color: #EFF5F5;
     margin-bottom: 25px;
@@ -115,16 +201,10 @@ body{
     font-size: 18px;
     text-decoration: none;
     color: #EFF5F5;
-    display: block;
-    margin-bottom: 15px;
-    transition: all .3s ease;
-}
-.footer-links ul li:hover{
-    color: white;
-    padding-left: 6px;
 }
 
-.social-redes a{
+
+.social-redes a {
     display: inline-block;
     min-height: 40px;
     width: 40px;
@@ -136,14 +216,26 @@ body{
     color: white;
     transition: all .5s ease;
 }
-.social-redes a img{
+
+.social-redes a:hover {
+    background-color: #00c3ff;
+}
+
+.social-redes a img {
     width: 20px;
     height: 20px;
 }
 
+@media (max-width:600px){
+    .footer .container .footer-row{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
 /* contacto pages */
 
-.mainContacto{
+.mainContacto {
     padding: 2% 0 10% 0;
 }
 
@@ -154,14 +246,16 @@ body{
     display: flex;
     flex-direction: column;
     text-align: center;
-    margin: 15px 0; 
+    margin: 15px 0;
     padding: 0 0 15px 0;
 }
 
 
 body .mainContacto {
-    margin: auto; }
-    body .mainContacto form {
+    margin: auto;
+}
+
+body .mainContacto form {
     background-color: #f8f5ee;
     display: flex;
     flex-direction: column;
@@ -169,34 +263,40 @@ body .mainContacto {
     border-radius: 10px;
     font-size: 1.0em;
     margin: 0 auto;
-    padding: 20px; 
+    padding: 20px;
 }
+
 .mainContacto form .field {
     border: 1px solid #ccc;
-    padding: 10px; 
+    padding: 10px;
 }
+
 .mainContacto form .field:focus {
-    border-color: #4ea5f1; 
+    border-color: #4ea5f1;
 }
 
 .mainContacto form .center-content {
-    text-align: center; 
+    text-align: center;
 }
+
 .mainContacto form .center-content .btn {
     border-radius: 5px;
     display: inline-block;
     padding: 10px 15px;
     text-decoration: none;
     text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3); 
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
 }
+
 .mainContacto form .center-content .btn-green {
     color: white;
-    background-color: #3CC93F; 
+    background-color: #3CC93F;
 }
+
 .mainContacto form .center-content .btn-green:hover {
-    background-color: #37B839; 
+    background-color: #37B839;
 }
+
 .mainContacto form .center-content .btn-green:active {
-    background-color: #29962A; 
+    background-color: #29962A;
 }
