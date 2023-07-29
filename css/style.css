@@ -9,6 +9,7 @@ font-family: 'Poppins', sans-serif;*/
     margin: 0;
     padding: 0;
     list-style: none;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
@@ -34,7 +35,6 @@ body {
     left: 0;
     right: 0;
     margin: auto;
-    /* Centrar*/
     color: white;
     font-size: 8vw;
     text-align: center;
@@ -60,7 +60,6 @@ section {
 
 
 .mainPrincipal section .div-h2 {
-    font-family: 'Poppins', sans-serif;
     display: flex;
     justify-content: center;
     padding: 5% 0;
@@ -138,7 +137,13 @@ section {
 }
 
 /* propuesta educativa */
-
+.mainPrincipal .section-educacion .div-p{
+    justify-content: center;
+}
+.mainPrincipal .section-educacion .div-p p{
+    width: 50%;
+    text-align: center;
+}
 
 /* noticias */
 
@@ -227,9 +232,13 @@ section {
 }
 
 @media (max-width:600px){
+    #eliminar{
+        display: none;
+    }
+}
+@media (max-width:300px){
     .footer .container .footer-row{
         flex-direction: column;
-        align-items: center;
     }
 }
 
@@ -240,7 +249,6 @@ section {
 }
 
 .mainContacto h2 {
-    color: #494B4D;
     font-size: 2.5em;
     font-weight: 500;
     display: flex;
@@ -299,4 +307,15 @@ body .mainContacto form {
 
 .mainContacto form .center-content .btn-green:active {
     background-color: #29962A;
+}
+
+@media (max-width:600px){
+    .mainContacto div form{
+        width: 350px;
+    }
+}
+@media (max-width:360px){
+    .mainContacto div form{
+        width: 250px;
+    }
 }
