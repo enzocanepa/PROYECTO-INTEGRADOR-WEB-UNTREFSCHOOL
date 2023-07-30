@@ -1,7 +1,3 @@
-/* google font 
-font-family: 'Belanosima', sans-serif;
-font-family: 'Poppins', sans-serif;*/
-
 @import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@600&family=Poppins:wght@100;200;400&display=swap');
 
 * {
@@ -75,6 +71,12 @@ section {
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-around;
+    background-color: #f8f5ee;
+    width: 90%;
+    border-radius: 10px;
+    margin: 0 auto;
+    padding: 50px 0;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);
 }
 
 .mainPrincipal .section-nosotros .div-nosotros img {
@@ -112,6 +114,12 @@ section {
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-around;
+    background-color: #f8f5ee;
+    width: 90%;
+    border-radius: 10px;
+    margin: 0 auto;
+    padding: 50px 0;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);
 }
 
 .mainPrincipal .section-porque .div-porque img {
@@ -138,10 +146,17 @@ section {
 
 /* propuesta educativa */
 .mainPrincipal .section-educacion .div-p{
+    display: flex;
     justify-content: center;
+    background-color: #f8f5ee;
+    width: 60%;
+    border-radius: 10px;
+    margin: 0 auto;
+    padding: 50px 0;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);
 }
 .mainPrincipal .section-educacion .div-p p{
-    width: 50%;
+    width: 90%;
     text-align: center;
 }
 
@@ -158,7 +173,18 @@ section {
 }
 
 .mainPrincipal .section-noticias .div-noticias div {
-    width: 30%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f8f5ee;
+    border-radius: 10px;
+    margin: 0 auto;
+    padding: 50px 0;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);
+}
+.mainPrincipal .section-noticias .div-noticias div p{
+    width: 90%;
 }
 @media (max-width:600px){
     .mainPrincipal .section-noticias .div-noticias{
@@ -259,11 +285,11 @@ section {
 }
 
 
-body .mainContacto {
+.mainContacto {
     margin: auto;
 }
 
-body .mainContacto form {
+.mainContacto form {
     background-color: #f8f5ee;
     display: flex;
     flex-direction: column;
@@ -272,6 +298,7 @@ body .mainContacto form {
     font-size: 1.0em;
     margin: 0 auto;
     padding: 20px;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);
 }
 
 .mainContacto form .field {
