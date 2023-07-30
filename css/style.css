@@ -37,7 +37,7 @@ body {
     font-family: 'Belanosima', sans-serif;
 }
 
-@media (max-width:600px){
+@media (max-width:768px){
     .mainPrincipal .divBanner img{
         height: 50%;
     }
