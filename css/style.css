@@ -160,6 +160,18 @@ section {
     text-align: center;
 }
 
+@media (max-width:768px){
+    .mainPrincipal .section-educacion .div-p{
+        width: 80%;
+    }
+}
+
+@media (max-width:400px){
+    .mainPrincipal .section-educacion .div-p{
+        width: 90%;
+    }
+}
+
 /* noticias */
 
 .mainPrincipal .section-noticias {
@@ -193,6 +205,12 @@ section {
     }
     .mainPrincipal .section-noticias .div-noticias div{
         width: 70%;
+        margin: 5% 0;
+    }
+}
+@media (max-width:400px){
+    .mainPrincipal .section-noticias .div-noticias div{
+        width: 90%;
     }
 }
 
@@ -338,11 +356,11 @@ section {
 
 @media (max-width:600px){
     .mainContacto div form{
-        width: 350px;
+        width: 80%;
     }
 }
-@media (max-width:360px){
+@media (max-width:400px){
     .mainContacto div form{
-        width: 250px;
+        width: 90%;
     }
 }
